@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bibliothèque</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Section Livres -->
+    <section id="livres">
+        <h2>Gestion des Livres</h2>
+        <form id="form-livre">
+            <input type="text" id="titre" placeholder="Titre" required>
+            <input type="text" id="auteur" placeholder="Auteur" required>
+            <input type="number" id="quantite" placeholder="Quantité" required>
+            <button type="submit">Ajouter Livre</button>
+        </form>
+        <div id="liste-livres">
+            <!-- Liste des livres -->
+        </div>
+    </section>
+
+    <!-- Section Utilisateurs -->
+    <section id="utilisateurs">
+        <h2>Gestion des Utilisateurs</h2>
+        <form id="form-utilisateur">
+            <input type="text" id="nom" placeholder="Nom" required>
+            <input type="prenom" id="prenom" placeholder="Prenom" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <button type="submit">Ajouter Livre</button>
+        </form>
+        <div id="liste-utilisateurs">
+            <!-- Liste des utilisateurs -->
+        </div>
+    </section>
+
+    <!-- Section Emprunts -->
+    <section id="emprunts">
+        <h2>Gestion des Emprunts</h2>
+        <form id="form-emprunt">
+            <select id="select-utilisateur"></select>
+            <select id="select-livre"></select>
+            <button type="submit">Emprunter</button>
+        </form>
+        <div id="liste-emprunts">
+            <!-- Liste des emprunts -->
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
