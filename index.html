@@ -9,66 +9,67 @@
 </head>
 <body class="bg-light">
 
-    <div class="container my-5">
-        <h1 class="text-center mb-5">Gestion de Bibliothèque</h1>
-        <section id="livres" class="mb-5">
-            <h2 class="mb-3">Gestion des Livres</h2>
-            <form id="form-livre" class="row g-3 mb-3">
-                <div class="col-md-4">
-                    <input type="text" id="titre" class="form-control" placeholder="Titre" required>
-                </div>
-                <div class="col-md-4">
-                    <input type="text" id="auteur" class="form-control" placeholder="Auteur" required>
-                </div>
-                <div class="col-md-2">
-                    <input type="number" id="quantite" class="form-control" placeholder="Quantité" required>
-                </div>
-                <div class="col-md-2">
-                    <button type="submit" class="btn btn-primary w-100">Ajouter</button>
-                </div>
-            </form>
-            <div id="liste-livres" class="list-group">
-            </div>
-        </section>
+<div class="container my-5">
+    <h1 class="text-center mb-5">Gestion de Bibliothèque</h1>
+    <section id="livres">
+    <h2>Gestion des Livres</h2>
+    <form id="form-livre" class="row g-3 mb-3">
+    <div class="col-12 col-md-4">
+    <input type="text" id="titre" class="form-control" placeholder="Titre" required>
+</div>
+                
+<div class="col-12 col-md-4">
+    <input type="text" id="auteur" class="form-control" placeholder="Auteur" required>
+</div>
+                
+<div class="col-12 col-md-2">
+    <input type="number" id="quantite" class="form-control" placeholder="Quantité" required>
+</div>
+                
+<div class="col-12 col-md-2">
+    <button type="submit" class="btn btn-primary w-100">Ajouter</button>
+</div>
+</form>
+            
+<div id="liste-livres" class="list-group"></div>
+</section>
+        
+<section id="utilisateurs">
+    <h2>Gestion des Utilisateurs</h2>
+    <form id="form-utilisateur" class="row g-3 mb-3">
+        <div class="col-12 col-md-3">
+            <input type="text" id="nom" class="form-control" placeholder="Nom" required>
+        </div>
+        <div class="col-12 col-md-3">
+            <input type="text" id="prenom" class="form-control" placeholder="Prénom" required>
+        </div>
+        <div class="col-12 col-md-4">
+            <input type="email" id="email" class="form-control" placeholder="Email" required>
+        </div>
+        <div class="col-12 col-md-2">
+            <button type="submit" class="btn btn-success w-100">Ajouter</button>
+        </div>
+    </form>
+    <div id="liste-utilisateurs" class="list-group"></div>
+</section>
 
-        <section id="utilisateurs" class="mb-5">
-            <h2 class="mb-3">Gestion des Utilisateurs</h2>
-            <form id="form-utilisateur" class="row g-3 mb-3">
-                <div class="col-md-3">
-                    <input type="text" id="nom" class="form-control" placeholder="Nom" required>
-                </div>
-                <div class="col-md-3">
-                    <input type="text" id="prenom" class="form-control" placeholder="Prénom" required>
-                </div>
-                <div class="col-md-4">
-                    <input type="email" id="email" class="form-control" placeholder="Email" required>
-                </div>
-                <div class="col-md-2">
-                    <button type="submit" class="btn btn-success w-100">Ajouter</button>
-                </div>
-            </form>
-            <div id="liste-utilisateurs" class="list-group">
-            </div>
-        </section>
+<section id="emprunts">
+    <h2>Gestion des Emprunts</h2>
+    <form id="form-emprunt" class="row g-3 mb-3">
+        <div class="col-12 col-md-5">
+            <select id="select-utilisateur" class="form-select"></select>
+        </div>
+        <div class="col-12 col-md-5">
+            <select id="select-livre" class="form-select"></select>
+        </div>
+        <div class="col-12 col-md-2">
+            <button type="submit" class="btn btn-warning w-100">Emprunter</button>
+        </div>
+    </form>
+    <div id="liste-emprunts" class="list-group"></div>
+</section>
 
-        <section id="emprunts" class="mb-5">
-            <h2 class="mb-3">Gestion des Emprunts</h2>
-            <form id="form-emprunt" class="row g-3 mb-3">
-                <div class="col-md-5">
-                    <select id="select-utilisateur" class="form-select"></select>
-                </div>
-                <div class="col-md-5">
-                    <select id="select-livre" class="form-select"></select>
-                </div>
-                <div class="col-md-2">
-                    <button type="submit" class="btn btn-warning w-100">Emprunter</button>
-                </div>
-            </form>
-            <div id="liste-emprunts" class="list-group">
-            </div>
-        </section>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
