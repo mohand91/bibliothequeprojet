@@ -126,7 +126,7 @@ document.getElementById("form-utilisateur").addEventListener("submit", e => {
         document.getElementById("email").value
     );
     e.target.reset();
-    });
+});
 
 function emprunterEmprunt(utilisateurId, livreId) {
     const utilisateur = bibliotheque.utilisateurs.find(utilisateurs => utilisateurs.id === utilisateurId);
@@ -173,6 +173,7 @@ function supprimerEmprunt(empruntId) {
 
     afficherEmprunts();
     afficherLivres();
+    remplirSelects()
 }
 
 function afficherEmprunts() {
@@ -217,7 +218,7 @@ function remplirSelects() {
         }
     });
 }
- 
+
 document.getElementById("form-emprunt").addEventListener("submit", e => {
     e.preventDefault();
     emprunterEmprunt(
